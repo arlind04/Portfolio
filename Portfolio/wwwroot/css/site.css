@@ -1,26 +1,26 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .nav-bar {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: black;
     border-bottom: 1px solid gray;
     box-shadow: inset;
     margin-bottom: 10px;
@@ -34,5 +34,126 @@ body {
 
 .link {
     text-decoration: none;
-    padding: 4px 10px 4px 10px;
+    padding: 15px 10px 15px 10px;
+    color: white !important;
+}
+
+    .link:hover {
+        color: blue !important;
+    }
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 30px;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    background-color: black;
+}
+
+.text-container {
+    display: block;
+    padding: 100px;
+}
+
+.text {
+    text-align: center;
+    color: white;
+}
+
+#text-about {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#text-header {
+    color: white;
+}
+
+.container-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 30px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#text-weigth {
+    font-weight: 800;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.container-icons {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .text-responsive {
+        text-align: center;
+    }
 }
