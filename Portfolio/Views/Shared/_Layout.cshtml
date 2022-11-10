@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,6 @@
                 <div class="d-flex justify-content-center">
                     <a href="/Home/Index/#about" class="link">About</a>
                     <a href="/Home/Index/#github" class="link">Github</a>
-                    <a class="link" asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a>
                 </div>
             </div>
         </nav>
@@ -32,8 +32,9 @@
         <div class="container-footer">
             &copy; 2022 - Portfolio
             <div class="container-icons">
-                <a href="https://www.facebook.com/arlind.bytyqi.125" target="_blank" class="nav-link p-0 text-muted" style="margin-right: 15px;"><i class="bi bi-facebook"></i></a>
-                <a href="" class="nav-link p-0 text-muted"><i class="bi bi-instagram"></i></a>
+                <span style="margin-right: 10px;">Contact me: </span>
+                <a href="https://www.facebook.com/arlind.bytyqi.125" target="_blank" class="nav-link p-0 text-muted" style="margin-right: 15px;"><i id="icons" style="color: white;" class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/arlind.bytyqii/" target="_blank" class="nav-link p-0 text-muted"><i style="color: white;" id="icons" class="bi bi-instagram"></i></a>
             </div>
         </div>
     </footer>
